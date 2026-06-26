@@ -39,7 +39,8 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.math_real.all;
 
-use work.axis_utils_pkg.axis_demux_custom;
+library common;
+use common.axis_utils_pkg.axis_demux_custom;
 
 entity axis_demux is
   generic(

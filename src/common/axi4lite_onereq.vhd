@@ -36,7 +36,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-use work.axi4lite_utils_pkg.axi4lite_register;
+library common;
+use common.axi4lite_utils_pkg.axi4lite_register;
 
 entity axi4lite_onereq is
   generic(

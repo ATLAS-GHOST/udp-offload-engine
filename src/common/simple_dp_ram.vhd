@@ -44,7 +44,8 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.math_real.all;
 
-use work.memory_utils_pkg.true_dp_ram;
+library common;
+use common.memory_utils_pkg.true_dp_ram;
 
 
 ------------------------------------------------------------------------

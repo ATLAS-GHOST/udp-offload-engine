@@ -109,9 +109,9 @@ package uoe_module_pkg is
   constant C_MAC_HEADER_SIZE : positive := 14;
 
   -- IPv4 Parameters
-  constant C_IPV4_MAX_PACKET_SIZE  : positive := 1500;
+  constant C_IPV4_MAX_PACKET_SIZE  : positive := 9000;
   constant C_IPV4_MIN_HEADER_SIZE  : positive := 20;
-  constant C_IPV4_MAX_PAYLOAD_SIZE : positive := C_IPV4_MAX_PACKET_SIZE - C_IPV4_MIN_HEADER_SIZE; --1480
+  constant C_IPV4_MAX_PAYLOAD_SIZE : positive := C_IPV4_MAX_PACKET_SIZE - C_IPV4_MIN_HEADER_SIZE; --8980
 
   -- UDP Parameters
   constant C_UDP_HEADER_SIZE : positive := 8;
@@ -124,5 +124,4 @@ package uoe_module_pkg is
   constant C_STATUS_INVALID : std_logic := '1';
 
 end package uoe_module_pkg;
-
 

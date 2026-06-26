@@ -424,9 +424,9 @@ begin
       if (S_AXI_ARESET = '1') then
         bad_wr_addr               <= '0';
 
-        reg_local_mac_addr_lsb_int(31 downto 0)               <= "00000000000000000000000000000000";
-        reg_local_mac_addr_msb_int(15 downto 0)               <= "0000000000000000";
-        reg_local_ip_addr_int(31 downto 0)                    <= "00000000000000000000000000000000";
+        reg_local_mac_addr_lsb_int(31 downto 0)               <= x"3CCC5B5B";
+        reg_local_mac_addr_msb_int(15 downto 0)               <= x"DA5E";
+        reg_local_ip_addr_int(31 downto 0)                    <= x"C0A8C810";
         reg_raw_dest_mac_addr_lsb_int(31 downto 0)            <= "11111111111111111111111111111111";
         reg_raw_dest_mac_addr_msb_int(15 downto 0)            <= "1111111111111111";
         reg_ipv4_time_to_leave_int(7 downto 0)                <= "01100100";
@@ -444,10 +444,10 @@ begin
         reg_arp_configuration_int(11 downto 0)                <= "001111101000";
         reg_arp_configuration_int(15 downto 12)               <= "0011";
         reg_arp_configuration_int(16)                         <= '0';
-        reg_arp_configuration_int(18 downto 17)               <= "00";
+        reg_arp_configuration_int(18 downto 17)               <= "01";
         reg_arp_configuration_int(19)                         <= '0';
         reg_arp_configuration_int(20)                         <= '0';
-        reg_config_done_int(0)                                <= '0';
+        reg_config_done_int(0)                                <= '1';
         reg_interrupt_enable_int(0)                           <= '0';
         reg_interrupt_enable_int(1)                           <= '0';
         reg_interrupt_enable_int(2)                           <= '0';

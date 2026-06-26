@@ -34,7 +34,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-use work.cdc_utils_pkg.cdc_bit_sync;
+library common;
+use common.cdc_utils_pkg.cdc_bit_sync;
 
 entity cdc_pulse_sync is
   generic(

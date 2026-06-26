@@ -31,8 +31,9 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-use work.axi4lite_utils_pkg.C_AXI_RESP_OKAY;
-use work.axi4lite_utils_pkg.C_AXI_RESP_SLVERR;
+library common;
+use common.axi4lite_utils_pkg.C_AXI_RESP_OKAY;
+use common.axi4lite_utils_pkg.C_AXI_RESP_SLVERR;
 
 entity axi4lite_sp_ram_ctrl is
   generic(

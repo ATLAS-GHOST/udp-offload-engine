@@ -34,7 +34,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-use work.axis_utils_pkg.axis_register;
+library common;
+use common.axis_utils_pkg.axis_register;
 
 entity axis_rate_limit is
   generic(
